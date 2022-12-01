@@ -41,10 +41,10 @@ public class TestBase {
      {
     	 logger.info("framework execution completed");
      }
-     @Parameters("browser")   
+      
 	 @BeforeMethod  
-	public void setUp(String br) throws InterruptedException {
-		//String br="chrome";
+	public void setUp() throws InterruptedException {
+		String br="Chrome";
 		 
 		if(br.equalsIgnoreCase("chrome")) {
 		    WebDriverManager.chromedriver().setup();
